@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="프로필,프로젝트,대외활동,기록,블로그">  
+    <title>채연이의 슬기로운 대학생활</title>
+    <link rel="stylesheet" href="css.css">
+    <style type="text/css">
+    img{width: 300px;height: 300px;margin-left: 20px;margin-top: 20px;}
+    p{margin-top:50px;text-align: center;}
+    </style>
+    </head>
+    <body>
+        <h1><a href="index.html">채연이의 슬기로운 대학생활<audio controls src="Search.mp3" ></audio></a></h1>
+        <nav>
+            <ul id="main-menu">
+                <li><a href="profile.html">프로필</a></li>
+                <li><a href="project.html">프로젝트</a>
+                   <ul id="sub-menu">
+                       <li><a href="coding.html">코딩</a></li>
+                       <li><a href="tableau.html">태블로</a></li>
+                   </ul></li>
+                <li><a href="activity.html">대외활동</a>
+                <ul id="sub-menu">
+                    <li><a href="club.html">동아리</a></li>
+                    <li><a href="book.html">독서모임</a></li>
+                </ul></li>
+                <li><a href="note.html">기록</a></li>
+                <li><a href="http://m.blog.naver.com/kcy211211">블로그</a></li>
+            </ul></nav>
+            <div id="imgs">
+                <img id="pic1" src="b1.jpeg">
+                <img id="pic2" src="b2.jpeg">
+                <img id="pic3" src="b3.jpeg">
+                <img id="pic4" src="b4.jpeg">
+                <br>
+                <p id="text">한줄평</p>
+            </div>
+            <script type="text/javascript">
+            document.getElementById("pic1").onmouseover=mouseover_pic1
+            document.getElementById("pic2").onmouseover=mouseover_pic2
+            document.getElementById("pic3").onmouseover=mouseover_pic3
+            document.getElementById("pic4").onmouseover=mouseover_pic4
+
+            document.getElementById("pic1").onmouseout=reset_text
+            document.getElementById("pic2").onmouseout=reset_text
+            document.getElementById("pic3").onmouseout=reset_text
+            document.getElementById("pic4").onmouseout=reset_text
+
+            function mouseover_pic1(){
+                document.getElementById("text").innerHTML="<p>큰 사고를 예언을 통해 예방해주는 예언가에게 <br> 정부에서 돈을 주는 게 맞는가?  vs  개인이 부담하게 맞는가?</p>";
+            }
+            function mouseover_pic2(){
+                document.getElementById("text").innerHTML="<p>내 일은 누군가가 죽어야 성립되는 비즈니스다.</p>";
+            }
+            function mouseover_pic3(){
+                document.getElementById("text").innerHTML="<p>실화라고 믿고 싶지 않아지는</p>";
+            }
+            function mouseover_pic4(){
+                document.getElementById("text").innerHTML="<p>잠자는 시간도 의미있어</p>";
+            }
+            function reset_text(){
+             document.getElementById("text").innerHTML = "한줄평";
+            }
+            </script>
+    </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="프로필,프로젝트,대외활동,기록,블로그">  
+    <title>채연이의 슬기로운 대학생활</title>
+    <link rel="stylesheet" href="css.css">
+    </head>
+    <body>
+        <h1><a href="index.html">채연이의 슬기로운 대학생활<audio controls src="Search.mp3" ></audio></a></h1>
+        <nav>
+            <ul id="main-menu">
+				<li><a href="profile.html">프로필</a></li>
+                <li><a href="project.html">프로젝트</a>
+                   <ul id="sub-menu">
+                       <li><a href="coding.html">코딩</a></li>
+                       <li><a href="tableau.html">태블로</a></li>
+                   </ul></li>
+                <li><a href="activity.html">대외활동</a>
+                <ul id="sub-menu">
+                    <li><a href="club.html">동아리</a></li>
+                    <li><a href="book.html">독서모임</a></li>
+                </ul></li>
+                <li><a href="note.html">기록</a></li>
+                <li><a href="http://m.blog.naver.com/kcy211211">블로그</a></li>
+            </ul></nav>
+
+			<div class="first">
+			<h3>&nbsp;&nbsp;&nbsp;&nbsp;20살</h3>
+			<canvas id="myCanvas" width="1500" height="700"></canvas>
+			<script type="text/javascript">
+			var canvas = document.getElementById('myCanvas');
+			var myContext = canvas.getContext('2d');
+
+			myContext.beginPath();
+            myContext.rect(10,10,1100,500);
+            myContext.closePath();
+            myContext.stroke();
+            myContext.clip();
+			
+			var img1 = new Image();
+			img1.src = "201.jpg";
+			
+			img1.onload = function(){
+				myContext.drawImage(img1,50,20,300,300);
+			}
+
+			var img2 = new Image();
+			img2.src = "202.jpg"; 
+			
+			img2.onload = function(){
+				myContext.drawImage(img2,250,30,350,250);
+			}
+
+			var img3 = new Image();
+			img3.src = "203.jpg"; 
+			
+			img3.onload = function(){
+				myContext.drawImage(img3,50,300,300,200);
+			}
+
+			var img4 = new Image();
+			img4.src = "204.jpg"; 
+			
+			img4.onload = function(){
+				myContext.drawImage(img4,270,200,400,300);
+			}
+			var img5 = new Image();
+			img5.src = "205.jpg"; 
+			
+			img5.onload = function(){
+				myContext.drawImage(img5,750,100,200,300);
+			}
+			var img6 = new Image();
+			img6.src = "206.jpg"; 
+			
+			img6.onload = function(){
+				myContext.drawImage(img6,500,15,300,200);
+			}
+
+			var img7 = new Image();
+			img7.src = "207.jpg"; 
+			
+			img7.onload = function(){
+				myContext.drawImage(img7,450,220,300,280);
+			}
+
+			var img8 = new Image();
+			img8.src = "208.jpg"; 
+			
+			img8.onload = function(){
+				myContext.drawImage(img8,800,50,300,200);
+			}
+
+			var img9 = new Image();
+			img9.src = "209.jpg"; 
+			
+			img9.onload = function(){
+				myContext.drawImage(img9,780,300,300,200);
+			}
+		</script>
+		</div>
+    </body>
+</html>
